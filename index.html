@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Daily Chronicle - Home</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Banner Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <h1>Daily <span>Chronicle</span></h1>
+            </div>
+            
+            <!-- Standard Search Form Block -->
+            <form class="search-area" onsubmit="handleSearchFeedback(event)">
+                <input type="text" id="searchInput" placeholder="Search headlines..." required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Navigation Bar Links -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link active">All News</a>
+            <a href="#" class="nav-link">Technology</a>
+            <a href="#" class="nav-link">Sports</a>
+            <a href="#" class="nav-link">World</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Structural Container -->
+    <div class="main-wrapper">
+        
+        <!-- Main News Column Feed -->
+        <main class="news-section">
+            <h2 class="block-heading">Top Headlines</h2>
+            
+            <div class="news-grid">
+                
+                <!-- News Card 1 (Tech) -->
+                <div class="news-card">
+                    <img src="tech_news.jpg" alt="Technology News">
+                    <div class="card-body">
+                        <span class="badge tech-badge">Technology</span>
+                        <h3 class="card-title">Next-Gen Artificial Intelligence Chips Unveiled</h3>
+                        <p class="card-text">Engineers have developed a brand new microchip that processes machine tasks ten times faster than modern computing cores.</p>
+                        <!-- Navigates to the second webpage -->
+                        <a href="article.html" class="read-more-btn">Read Full Article</a>
+                    </div>
+                </div>
+
+                <!-- News Card 2 (Sports) -->
+                <div class="news-card">
+                    <img src="sports_news.jpg" alt="Sports News">
+                    <div class="card-body">
+                        <span class="badge sports-badge">Sports</span>
+                        <h3 class="card-title">Underdogs Secure Championship Victory</h3>
+                        <p class="card-text">Against all odds, the visiting team executed a perfect final play in the closing seconds to take home the gold trophy.</p>
+                        <a href="article.html" class="read-more-btn">Read Full Article</a>
+                    </div>
+                </div>
+
+                <!-- News Card 3 (World) -->
+                <div class="news-card">
+                    <img src="world_news.jpg" alt="World News">
+                    <div class="card-body">
+                        <span class="badge world-badge">World</span>
+                        <h3 class="card-title">Space Mission Discovers Underground Glaciers</h3>
+                        <p class="card-text">Deep radar imaging equipment deployed by the lunar satellite has discovered immense deposits of solid frozen ice sheets.</p>
+                        <a href="article.html" class="read-more-btn">Read Full Article</a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Right Side Panel Column -->
+        <aside class="sidebar-section">
+            
+            <!-- Trending List Box -->
+            <div class="sidebar-block">
+                <h2 class="block-heading">Trending Stories</h2>
+                <ul class="trending-list">
+                    <li><a href="article.html">01. Global electric vehicle sales hit record highs this quarter</a></li>
+                    <li><a href="article.html">02. New workspace guidelines reshaping downtown real estate properties</a></li>
+                    <li><a href="article.html">03. Smart traditional vinyl record players making a huge comeback</a></li>
+                </ul>
+            </div>
+
+            <!-- Interactive Newsletter Form Block -->
+            <div class="sidebar-block newsletter-box">
+                <h2 class="block-heading">Newsletter Signup</h2>
+                <p>Get immediate breaking news updates delivered straight to your email inbox folder.</p>
+                <form id="subscribeForm" onsubmit="handleSubscribeFeedback(event)">
+                    <div class="form-group">
+                        <label for="userName">Full Name:</label>
+                        <input type="text" id="userName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userEmail">Email Address:</label>
+                        <input type="email" id="userEmail" placeholder="name@example.com" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Subscribe Now</button>
+                </form>
+            </div>
+
+        </aside>
+    </div>
+
+    <!-- Footer Area Block -->
+    <footer>
+        <p>&copy; 2026 The Daily Chronicle Media Network. All Rights Reserved. Mid-Semester Project Submission.</p>
+    </footer>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

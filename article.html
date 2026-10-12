@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Chronicle - Full Article View</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Block -->
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <h1>Daily <span>Chronicle</span></h1>
+            </div>
+            <div class="back-home-area">
+                <!-- Action Link to route back to index.html -->
+                <a href="index.html" class="back-btn">&larr; Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Reader Setup -->
+    <div class="main-wrapper single-article-layout">
+        
+        <main class="article-content">
+            <span class="badge tech-badge">Technology Feature</span>
+            <h1 class="article-main-title">Next-Gen Artificial Intelligence Chips Unveiled</h1>
+            <p class="article-meta">Published on: October 12, 2026 | Written by: Senior Tech Correspondent</p>
+            
+            <!-- Large Image Element -->
+            <img src="tech_banner.jpg" alt="Tech Banner" class="featured-image">
+
+            <!-- Paragraph Block Elements -->
+            <p class="article-paragraph">
+                Today marks an incredible milestone in computer engineering fields worldwide. A joint team of international computing scientists has announced a ground-breaking architectural hardware design called the <b>"HyperCore AI"</b>. This new silicon design revolutionizes processing capabilities.
+            </p>
+            
+            <p class="article-paragraph">
+                Traditional computing units often encounter physical system speed thermal throttles when moving vast chunks of neural model parameters concurrently. The HyperCore module eliminates this latency constraint entirely by weaving high-speed calculations directly alongside system memory arrays.
+            </p>
+
+            <blockquote>
+                "This isn't a minor incremental performance upgrade. We are talking about basic architectural speed shifting across computing models."
+            </blockquote>
+
+            <!-- Interactive Comment Submission Form Box -->
+            <section class="comments-section">
+                <h3 class="block-heading">Reader Feedback</h3>
+                
+                <div class="add-comment-box">
+                    <h4>Leave a Comment</h4>
+                    <form id="commentForm" onsubmit="handleCommentFeedback(event)">
+                        <div class="form-group">
+                            <label for="commenterName">Your Name:</label>
+                            <input type="text" id="commenterName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="commentText">Comment Message:</label>
+                            <textarea id="commentText" rows="4" placeholder="Type your thoughts here..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Post Comment</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer Block -->
+    <footer>
+        <p>&copy; 2026 The Daily Chronicle Media Network. All Rights Reserved. Mid-Semester Project Submission.</p>
+    </footer>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
